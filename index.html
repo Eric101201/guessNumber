@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>終極密碼</title>
     <script src="app.js" defer></script>
   </head>
@@ -13,21 +13,21 @@
       <h1>猜數字遊戲</h1>
       <h3>輸入數字:</h3>
       <div class="scanf">
-          <span class="i1">最小範圍:<input type="number" id="inputMin" placeholder="0"></span>
+          <span class="i1">最小範圍:<input style="font-size: 16px;" type="number" inputmode="decimal" id="inputMin" placeholder="1"></span>
           <br>
-          <span class="i2">最大範圍:<input type="number" id="inputMax" placeholder="隨便你"> </span>
+          <span class="i2">最大範圍:<input style="font-size: 16px;" type="number" inputmode="decimal" id="inputMax" placeholder="隨便你"> </span>
           <br>
-          <button id="rand">產生數字</button>
+          <button id="rand" style="height: 30px; width: 110px; font-size: 16px;">產生數字</button>
       </div>
-      <div class="scope"></div>
-      <p class="hint"></p>
-      <p class="hint"></p>
+      <div class="scope" style="height: auto; width: auto;"></div>
+      <br>
 
 
       <div class="guess">
-          <span>猜的數字:<input type="number" id="guessInput"></span>
+          <span>猜的數字:<input style="font-size: 16px;" type="number" inputmode="decimal" id="guessInput"></span>
           <br>
-          <button>確定了!</button>
+          <br>
+          <button style="height: 30px; width: 110px; font-size: 16px;">確定了!</button>
       </div>
       <div class="view">
           

@@ -78,14 +78,14 @@
             scope.innerHTML=
             `
                 <span>答案介於 <span style="font-size:40px;color:#0066CC">${strMin}</span> 至 <span style="font-size:40px;color:#0066CC">${strMax}</span> 之間</span>
-            `
+                `
             // 清空
             view.innerHTML=
             `
                 
             `
             count =0;
-            guess.style.display = 'flex'
+            guess.style.display = 'block'
             i1.style.marginBottom = '5px'
             i2.style.marginBottom = '0'
         }else{
