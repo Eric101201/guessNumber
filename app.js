@@ -77,7 +77,7 @@
             strAnswerMax = strMax;
             scope.innerHTML=
             `
-                <span>答案介於 <span style="font-size:40px;color:#0066CC">${strMin}</span> 至 <span style="font-size:40px;color:#0066CC">${strMax}</span> 之間</span>
+                <span style="font-size:100px;color:#0080FF">${strMin}</span> 至 <span style="font-size:100px;color:#0080FF">${strMax}</span>
                 `
             // 清空
             view.innerHTML=
@@ -138,8 +138,7 @@
             view.innerHTML=
             `
                 <span>你猜的範圍是${strMin}~${strMax}</span><br>
-                <span>答案是:<span style="font-size:40px;color:#EA0000">${strAns}</span>，你一共答了 ${count} </span> 次! (含本次)</span><br>
-                <span>重新產生新的亂數可以再次遊玩</span>
+                <span>答案是:<span style="font-size:100px;color:#0080FF">${strAns}</span>
             `
             rand.textContent = '產生新的數字'
             rand.style.width = 'auto'
@@ -148,7 +147,7 @@
         }else if(v < answerMin || v > answerMax){
             view.innerHTML=
             `
-                <span">輸入的數字錯誤!<br>輸入的數字應為 <span style="font-size:40px;color:#0066CC">${strAnswerMin}</span> 至 <span style="font-size:40px;color:#0066CC">${strAnswerMax}</span> 之間</span>
+                <span">輸入的數字錯誤!<br>輸入的數字應為 <span style="font-size:100px;color:#0080FF">${strAnswerMin}</span> 至 <span style="font-size:100px;color:#0080FF">${strAnswerMax}</span> 之間</span>
             `
         }else if(v > answer){
             answerMax = v;
@@ -156,7 +155,7 @@
             strAnswerMax = String(answerMax).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
             view.innerHTML=
             `
-                <span>猜的數字太高了，試著稍微降低吧!<br>答案介於 <span style="font-size:40px;color:#0066CC">${strAnswerMin}</span> 至 <span style="font-size:40px;color:#0066CC">${strAnswerMax}</span> 之間</span>
+                <span>猜的數字太高了，試著稍微降低吧!<br>答案介於 <span style="font-size:100px;color:#0080FF">${strAnswerMin}</span> 至 <span style="font-size:100px;color:#0080FF">${strAnswerMax}</span> 之間</span>
             `
         }else if(v < answer){
             answerMin = v;
@@ -164,7 +163,7 @@
             strAnswerMin = String(answerMin).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
             view.innerHTML=
             `
-                <span>猜的數字太低了，試著稍微提高吧!<br>答案介於 <span style="font-size:40px;color:#0066CC">${strAnswerMin}</span> 至 <span style="font-size:40px;color:#0066CC">${strAnswerMax}</span> 之間</span>
+                <span>猜的數字太低了，試著稍微提高吧!<br>答案介於 <span style="font-size:100px;color:#0080FF">${strAnswerMin}</span> 至 <span style="font-size:100px;color:#0080FF">${strAnswerMax}</span> 之間</span>
             `
         }else{
             view.innerHTML=
