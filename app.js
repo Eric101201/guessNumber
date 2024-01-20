@@ -142,7 +142,7 @@
                 <span>重新產生新的亂數可以再次遊玩</span>
             `
             rand.textContent = '產生新的數字'
-            rand.style.width = '150px'
+            rand.style.width = 'auto'
             guess.style.display = 'none';
             scope.style.display = 'none';
         }else if(v < answerMin || v > answerMax){
